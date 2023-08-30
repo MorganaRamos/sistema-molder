@@ -1,4 +1,8 @@
 import { useState } from 'react'
+import { Outlet } from 'react-router-dom'
+import { Carrrosel } from './Components/Carrrosel'
+import { Footer } from './Components/Footer'
+import { Menu } from './Components/Menu'
 
 
 
@@ -7,9 +11,12 @@ function App() {
 
   return (
     <>
-      <div> bem vindo</div>
-       
+    <Menu/>
+    <Carrrosel/>
+    <Outlet/>
+    <Footer/>
     </>
+   
   )
 }
 
