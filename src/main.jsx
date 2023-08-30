@@ -4,27 +4,32 @@ import App from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Error } from './Pages/Error.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { Cadastro } from './Pages/Cadastro.jsx';
+import { Login } from './Pages/Login.jsx';
+import { Usuario } from './Pages/Usuario.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
-    errorElement: <ErrorPage/>,
-  },
-  {
-    path: "/login",
-    element: <Login/>,
-  },
-  {
-    path: "/usuario",
-    element: <Usuario/>,
     errorElement: <Error/>,
-  },
-  {
-    path: "/cadastro",
-    element: <Cadastro/>,
-    errorElement: <Error/>,
+      children: [
+      {
+        path: "/login",
+        element: <Login/>,
+      },
+      {
+        path: "/usuario",
+        element: <Usuario/>,
+        errorElement: <Error/>,
+      },
+      {
+        path: "/cadastro",
+        element: <Cadastro/>,
+        errorElement: <Error/>,
+      }
+      ]
   },
 ]);
 
