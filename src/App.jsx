@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { Outlet } from 'react-router-dom'
-import { Carrrosel } from './Components/Carrrosel'
 import { Footer } from './Components/Footer'
 import { Menu } from './Components/Menu'
 
@@ -12,7 +11,6 @@ function App() {
   return (
     <>
     <Menu/>
-    <Carrrosel/>
     <Outlet/>
     <Footer/>
     </>
