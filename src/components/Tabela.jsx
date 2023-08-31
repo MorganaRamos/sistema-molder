@@ -20,9 +20,7 @@ export const Tabela = (props) => {
                         <th scope="row">{user.id}</th>
                         <td>{user.name}</td>
                         <td>{user.email}</td>
-                        <td>{user.username}</td>
-                        <td>{user.website}</td>
-                        <td>{`${user.address.street}, ${user.address.suite}, ${user.address.zipcode} `}</td>
+                        
                     </tr>
                         )}
             </tbody>
