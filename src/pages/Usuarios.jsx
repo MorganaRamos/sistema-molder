@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { TableUsuarios } from '../components/TableUsuarios'
+import { TableUsuarios } from '../components/Usuario'
 
 
 export const Usuarios = () => {

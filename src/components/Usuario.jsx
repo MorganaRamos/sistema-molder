@@ -1,4 +1,7 @@
-export const TableUsuarios = (props) => {
+
+import React from 'react'
+
+export const Usuario = (props) => {
     console.log(props.data);
 
     return (
