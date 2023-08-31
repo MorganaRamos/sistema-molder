@@ -2,6 +2,7 @@ import React from 'react'
 
 export const Cadastro = () => {
   return (
+
     <div><form class="row g-3 needs-validation" novalidate>
     <div class="col-md-4">
       <label for="validationCustom01" class="form-label">Nome</label>
@@ -69,3 +70,5 @@ export const Cadastro = () => {
   </div>
   )
 }
+
+
