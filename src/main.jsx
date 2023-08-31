@@ -1,21 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import { Usuario } from './components/Usuario';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Cadastro } from './Pages/Cadastro.jsx';
 import { Login } from './Pages/Login.jsx';
-import { Usuario } from './Pages/Usuario.jsx';
 import { Home } from './Pages/Home.jsx';
+import { Usuarios } from './Pages/Usuarios';
+import App from './App.jsx';
 
 
 
 const router = createBrowserRouter([
   {
+
+
     path: "/",
     element: <App/>,
      children: [
@@ -25,7 +23,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/usuario",
-        element: <Usuario/>,
+        element: <Usuarios/>,
      },
       {
         path: "/cadastro",
@@ -36,6 +34,7 @@ const router = createBrowserRouter([
         element: <Home/>
       }
       ]
+
   },
 ]);
 
