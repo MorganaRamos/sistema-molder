@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
-import { TableUsuarios } from '../components/Usuario'
+import { Tabela} from '../components/Tabela'
 
 
 export const Usuarios = () => {
-    const colunas = ['id', 'name', 'email', 'username', 'website', 'address']
+    const colunas = ['id', 'nome', 'email', 'usuário', 'site', 'endereço']
     const [data, setData] = useState([])
 
 
@@ -24,7 +24,7 @@ export const Usuarios = () => {
     return (
         <>
             <div className='container'>
-                <TableUsuarios
+                <Tabela
                     colunas={colunas}
                     data={data}
                 />

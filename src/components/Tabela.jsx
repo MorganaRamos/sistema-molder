@@ -1,7 +1,7 @@
 
 import React from 'react'
 
-export const Usuario = (props) => {
+export const Tabela = (props) => {
     console.log(props.data);
 
     return (

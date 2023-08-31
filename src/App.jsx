@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Container } from 'react-bootstrap'
-import { Usuario } from './components/Usuario'
+import { Usuario } from './components/Tabela'
 
 
 
