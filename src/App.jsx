@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import { Container } from 'react-bootstrap'
 import { Usuario } from './components/Usuario'
-
+import { Outlet } from 'react-router-dom'
+import { Footer } from './Components/Footer'
+import { Menu } from './Components/Menu'
 
 
 function App() {
@@ -23,14 +25,15 @@ function App() {
   }, [])
 
   return (
-    
+       
+    <>
     <Container>
-    <Usuario colunas={colunas}
-        data={data}/>
-        </Container>
-       
-       
-  
+    <Menu/>
+    <Outlet/>
+    <Footer/>
+    </>
+   
+
   )
 }
 
