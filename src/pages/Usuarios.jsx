@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Tabela} from '../components/Tabela'
+import { Tabela} from '../Components/Tabela'
 
 
 export const Usuarios = () => {

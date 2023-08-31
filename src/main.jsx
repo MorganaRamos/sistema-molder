@@ -5,7 +5,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Cadastro } from './Pages/Cadastro.jsx';
 import { Login } from './Pages/Login.jsx';
 import { Home } from './Pages/Home.jsx';
-import { Usuarios } from './pages/Usuarios';
+import { Usuarios } from './Pages/Usuarios';
+import App from './App.jsx';
 
 
 
